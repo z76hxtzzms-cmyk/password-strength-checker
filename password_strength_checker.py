@@ -78,7 +78,7 @@ def check_strength(password):
         color = "green"
     elif 4 <= counter <= 5:
         rating = "Secure"
-        color = "blue"
+        color = "yellow"
     elif 2 <= counter <= 3:
         rating = "Moderate"
         color = "orange"

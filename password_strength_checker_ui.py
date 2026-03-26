@@ -123,13 +123,25 @@ checklist_frame.pack(padx=20, fill="x")
 check_keys = ["length_8", "length_12", "has_upper", 
               "has_lower", "has_number", "has_special"]
 
+# Better display names for the checklist items
+
+output_names = {
+    "length_8": "8+ characters",
+    "length_12": "12+ characters (bonus)",
+    "has_upper": "Uppercase letter",
+    "has_lower": "Lowercase letter",
+    "has_number": "Number included",
+    "has_special": "Special character"
+}
+
+
 # Dictionary to store label widgets so we can update them later
 check_labels = {}
 
 for key in check_keys:
     lbl = tk.Label(
         checklist_frame,
-        text=f"  -  {key}",
+        text=f"  -  {output_names[key]}",
         bg=BG_CARD,
         fg=TEXT_MUTED,
         font=("Helvetica", 10),
