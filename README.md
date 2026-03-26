@@ -91,7 +91,7 @@ password-strength-checker/
 
 ## AI Assistance
 
-This project was built with guidance from Claude (Anthropic) as part of a mentored learning experience. The majority of the code — especially `password_strength_checker.py` — was written by me. AI was used to help debug, clean up code, assist with Tkinter UI layout, and help with the overall project architecture to ensure a clean connection between the UI and core logic.
+All of the code in `password_strength_checker.py` was written by me. AI was used to help debug, clean up code, assist with Tkinter UI layout, and help with the overall project architecture to ensure a clean connection between the UI and core logic. It's main role was in `password_strength_checker_ui.py`, as I wanted a small desktop application version of this instead of a terminal based application.
 
 ---
 
