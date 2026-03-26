@@ -15,9 +15,6 @@ def check_password():
     # Update the rating label
     rating_label.config(text=f"Result: {rating}  ({score}/6)", fg=color)
 
-    #TODO: Fix UI, right now it shows the checks at first before inputting anything. Looks 
-    # Kind of ugly.
-
     # Checklist items mapped to display labels
     checks = {
         "length_8":   "8+ characters",
