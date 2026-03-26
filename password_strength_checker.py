@@ -48,3 +48,16 @@ if re.search(r"[a-z]", password):
 # Check password for special characters
 if re.search(r"[!@#$%^&*]", password):
     counter+=1
+
+# ---- Statements Below Will Report Password Strengh 0-6 ----
+
+print("Password Strength Results")
+print("Password Strength Score: ", counter)
+if counter == 6:
+    print("Your password is very strong.")
+elif 4 <= counter <= 5:
+    print("Your password is strong.")
+elif 2 <= counter < 3:
+    print("Your password is moderate.")
+else:
+    print("Your password is weak.")
