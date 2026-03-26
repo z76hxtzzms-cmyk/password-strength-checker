@@ -1,4 +1,4 @@
-# 🔐 Password Strength Checker
+# Password Strength Checker
 
 A Python desktop application that analyzes password strength in real time using regex pattern matching and security best practices.
 
@@ -6,13 +6,13 @@ Built as part of my cybersecurity learning journey as a first-year CIS student a
 
 ---
 
-## 📸 Screenshot
+## Screenshot
 
 ![Password Strength Checker](screenshot.png)
 
 ---
 
-## ✨ Features
+## Features
 
 - Real-time password strength analysis scored from 0 to 6
 - Checks for uppercase letters, lowercase letters, numbers, and special characters
@@ -24,7 +24,7 @@ Built as part of my cybersecurity learning journey as a first-year CIS student a
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3** — Core programming language
 - **Tkinter** — Built-in Python library for the desktop GUI
@@ -33,7 +33,7 @@ Built as part of my cybersecurity learning journey as a first-year CIS student a
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Make sure Python 3 is installed on your machine
 2. Clone this repository:
@@ -57,7 +57,7 @@ Built as part of my cybersecurity learning journey as a first-year CIS student a
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 password-strength-checker/
 │── password_strength_checker.py      # Core logic — strength analysis engine
@@ -68,7 +68,7 @@ password-strength-checker/
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 - Strengthened my understanding of **regex** for real-world pattern matching use cases
 - Built my first **desktop GUI** using Python's built-in Tkinter library
@@ -79,7 +79,7 @@ password-strength-checker/
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Add a password generator that creates a random strong password automatically
 - [ ] Add a show/hide password toggle button
@@ -89,12 +89,12 @@ password-strength-checker/
 
 ---
 
-## 🤖 AI Assistance
+## AI Assistance
 
 This project was built with guidance from Claude (Anthropic) as part of a mentored learning experience. The majority of the code — especially `password_strength_checker.py` — was written by me. AI was used to help debug, clean up code, assist with Tkinter UI layout, and help with the overall project architecture to ensure a clean connection between the UI and core logic.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is intended for **educational purposes only**. It does not store, transmit, or log any passwords entered by the user.
