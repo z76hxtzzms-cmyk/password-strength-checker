@@ -1,6 +1,7 @@
 # Password Strength Checker
 
-A Python desktop application that analyzes password strength in real time using regex pattern matching and security best practices.
+A Python desktop application that analyzes password strength in real time using regex pattern matching and security best practices. This application
+also creates strong random passwords that can be used.
 
 Built as part of my cybersecurity learning journey as a first-year CIS student at Cal Poly Pomona. I also do not trust other password checkers, so I decided to create my own. 
 
@@ -16,6 +17,7 @@ Built as part of my cybersecurity learning journey as a first-year CIS student a
 ## Features
 
 - Real-time password strength analysis scored from 0 to 6
+- Password generation
 - Checks for uppercase letters, lowercase letters, numbers, and special characters
 - Bonus scoring for passwords that are 12+ characters long
 - Blocklist check against the most common passwords based on NordPass
@@ -90,8 +92,8 @@ password-strength-checker/
 
 ## Future Improvements
 
-- [ ] Add a password generator that creates a random strong password automatically
-- [ ] Add a show/hide password toggle button
+- [x] Add a password generator that creates a random strong password automatically
+- [x] Add a show/hide password toggle button
 - [x] Improve UI
 - [ ] Expand the common passwords blocklist
 - [ ] Add more advanced strength measurement (entropy scoring)
@@ -101,7 +103,7 @@ password-strength-checker/
 
 ## AI Assistance
 
-All of the code in `password_strength_checker.py` was written entirely by me, 
+All of the code in `password_strength_checker.py` and was written entirely by me, 
 with the core logic built from prior knowledge of Python and regex. AI was used 
 to help debug, clean up code, and assist with bug fixes in the Flask 
 implementation. AI had a significant role in creating the UI — I built the 
