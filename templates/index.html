@@ -17,21 +17,41 @@
         <form action="/results" method="POST">
           <div class="field">
             <label>Password</label>
-            <!-- Password input, name is crucial for Flask to identify it -->
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
+            <!-- NEW: Wrapper div needed for positioning the show/hide checkbox -->
+            <div style="position: relative">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+              <!-- NEW: Show/hide checkbox sits inside the input field -->
+              <label class="show-hide">
+                <input type="checkbox" id="toggle" onclick="togglePassword()" />
+                Show
+              </label>
+            </div>
           </div>
           <button type="submit">Check Strength</button>
-
-          <div class="divider"></div>
-          <a href="/generate_password" class="generate-btn">Generate Strong Password</a>
         </form>
+
+        <div class="divider"></div>
+
+        <a href="/generate_password" class="generate-btn"
+          >Generate Strong Password</a
+        >
       </div>
     </div>
+
+    <!-- NEW: JavaScript to toggle password visibility — must be before closing body tag -->
+    <script>
+      function togglePassword() {
+        // Grab the password input field by its id
+        var input = document.getElementById("password");
+        // Ternary operator — if type is password switch to text, else switch back
+        input.type = input.type === "password" ? "text" : "password";
+      }
+    </script>
   </body>
 </html>

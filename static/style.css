@@ -103,7 +103,7 @@ input[type="password"] {
   background: var(--bg-input);
   border: 0.5px solid var(--border);
   border-radius: 8px;
-  padding: 11px 14px;
+  padding: 11px 70px 11px 14px;
   color: var(--text-primary);
   font-family: "DM Mono", monospace;
   font-size: 14px;
@@ -324,3 +324,31 @@ input[type="submit"]:active {
     border-color: var(--border-focus);
     color: var(--text-primary);
 }
+
+.show-hide {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    cursor: pointer;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    user-select: none;
+    padding: 4px 8px;
+    background: var(--bg-item);
+    border-radius: 4px;
+}
+
+.show-hide input[type="checkbox"] {
+    accent-color: var(--green);
+    cursor: pointer;
+    margin-right: 4px;
+    width: 13px;
+    height: 13px;
+}
+
