@@ -2,9 +2,18 @@
 # Update: We removed getpass, GUI will handle the password "hide" instead.
 import re
 
+import random # We will use the random library to randomly select characters for the password.
+
+
 # List of common passwords to avoid. Found using sources from NordPass.
 common_passwords = ["123456", "admin", "12345678", "123456789", "12345", 
                     "password", "Aa123456", "Pass@123", "admin123"]
+
+# Create list's the contain different characters to be used in the password generator function.
+lowercase_letters = "abcdefghijklmnopqrstuvwxyz"
+uppercase_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+numbers = "0123456789"
+special_characters = "!@#$%^&*"
 
 def check_strength(password):
     # Counter variable to keep track of password strength score.
@@ -87,3 +96,33 @@ def check_strength(password):
         color = "red"
 
     return counter, rating, color, results
+
+
+# Create a function to generate a random password. This will be used in the UI too!
+# NOTE: These passwords will be RANDOMLY generated, meaning it won't follow your typical
+# password for example: "Password123!" but it will be something like "aB3$eFgH". This is to ensure that
+# the generated password is as secure as possible and not easily guessable. The user can then use this
+# generated password as a base and modify it to their liking if they want to. 
+# This is just to give them a starting point, or can be used as is if they want a completely random password.
+
+def generatePassword():
+    password_length = 16 # Password will be 16 characters long, very secure.
+    password = ""
+
+    # Ensure password contains at least one of each char type to meet requirements.
+    password += random.choice(lowercase_letters)
+    password += random.choice(uppercase_letters)
+    password += random.choice(numbers)
+    password += random.choice(special_characters)
+
+    # Create a string that combines all characters to choose from for remaining characters in password.
+    all_chars = lowercase_letters + uppercase_letters + numbers + special_characters
+
+    for i in range(password_length - 4): # We already added 4 characters, so we need to add 12 more.
+        password += random.choice(all_chars)
+
+    password_list = list(password) # Convert password string to a list to shuffle it.
+    random.shuffle(password_list) # Shuffle the list to ensure randomness.
+    password = ''.join(password_list) # Convert list back to string.
+
+    return password
