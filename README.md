@@ -76,7 +76,7 @@ build my own.
 ```
 3. Clone this repository:
 ```
-   git clone https://github.com/z76hxtzzms-cmyk/password-strength-checker.git
+   git clone https://github.com/jstn131/repo-name.git
 ```
 4. Navigate into the project folder:
 ```
